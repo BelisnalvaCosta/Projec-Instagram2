@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;    
+    height: 100vh;
+    background-color: rgb(164, 181, 196);    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f56c9a;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgb(86, 154, 241);
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;    
+}
+
+.group:nth-child(2) {
+    min-height: 5rem;
+    margin: 1rem;
+}
+
+.group:nth-child(3) {
+    min-height: 10rem;
+    margin: 1rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 8rem;
+}
+
+.instagram-login {
+    background-color: #087fcf;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: hsl(204, 75%, 50%);
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: #ffffff
+}
+
+.link-blue {
+    color: #0884d6;
+}
+
+.get-the-app{    
+    flex-direction: row;    
+    width: 100%;    
+    height: 20vh;
+    background-color: #f56c9a;    
+    margin: 10px;
+    padding: 10px;
+    display: flexbox;
+    justify-content: center;
+    border: 2px rgb(26, 12, 2);
+}
+
+.download-btn {   
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 50px;
+    color: #ffffff;
+
+}
+
+.app-download-btn {
+    font-size: 18;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-weight: bold;  
+    cursor: pointer;  
+}
+
+    .app-download-btn-1{
+        color: black;
+        background-color: rgb(80, 243, 189);
+        border-radius: 15px;
+        border-bottom: 15px solid green;         
+        transition: transform0.5s;
+    }
+
+    .app-download-1:hover{
+        background-color: rgb(133, 245, 133);
+        box-shadow: opx 0px 20px rgb(202, 240, 202);
+        transform: translate(0px, -5px);
+        transition: transform0.5s;
+    }
+
+    .app-download-btn-2{
+        color: black;
+        background-color: rgb(125, 113, 230);
+        border-radius: 10px;
+        border-bottom: 5px solid rgb(125, 125, 235); 
+        transition: transform 0.5s;
+    }
+
+    .app-download-2:hover{
+        background-color: rgb(141, 124, 233);
+        box-shadow: opx 0px 20px rgb(157, 149, 230);
+        transform: translate(0px, -5px);
+        transition: transform 0.5s;
+    }
+
+    .app-download-btn-3{
+        color: black;
+        background-color: rgb(216, 61, 87);
+        border-radius: 10px;
+        border-bottom: 5px solid rgb(219, 121, 129); 
+        transition: transform 0.5s;
+    }
+
+    .app-download-3:hover{
+        background-color: rgb(163, 44, 44);
+        box-shadow: opx 0px 20px rgb(218, 148, 148);
+        transform: translate(0px, -5px);
+        transition: transform 0.5s;
+    }
+
+    #submit{
+        background-image: linear-gradient(to right, rgba(0, 92, 197), rgb(148, 98, 241));
+        width: 100%;
+        border: none;
+        padding: 15px 10px 15px 10px;
+        color: rgb(137, 165, 189);
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 15px;
+        transform: translate(0px, -5px);
+        transition: 0.5s;
+    }
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+
+    .get-the-app{
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .app-download-btn{
+        width: 50%;
+    }
+
+    .submit{
+        width: auto;
+    }
+}
