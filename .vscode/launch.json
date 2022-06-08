@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:8080/Projec_Instagram/index.html",
             "webRoot": "${Project_Instagram.index.html}"
         },
 
@@ -23,7 +23,7 @@
         {
             "type": "pwa-msedge",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Open Project_Instagram.index.html",
             "file": "c:\\Users\\X220\\Projec_Instagram\\src\\img\\index.html"
         }
     ]
